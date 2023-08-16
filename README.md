@@ -7,13 +7,14 @@ To get started, you can request your personal data from Spotify here: https://ww
 
 Spotify provides several JSON files containing a variety of information about your account. This project focuses mainly on the streaming history files and the inferences file—the latter containing Spotify's insights into your consumer behavior.
 
-First, I used an online tool to convert the JSON files into Excel workbooks as I find it a more comfortable format to work with.  Using the GetData feature available in Excel, I created another workbook containing a list of the artists and songs I'd engaged with arranged in descending order based on the total streaming time.
+**Cleaning the data:**
+First, I used an online tool to convert the JSON files into Excel workbooks as I find it a more comfortable format to work with.  Using the GetData feature available in Excel, I created another workbook containing a list of the artists and songs I'd engaged with arranged in descending order based on the total streaming time. To further refine the data, I eliminated the datapoints where the "msPlayed" value was less than 30,000 i.e. instances when I'd skipped the song within half a minute.
 
-To further refine the data, I eliminated the datapoints where the "msPlayed" value was less than 30,000 i.e. instances when I'd skipped the song within half a minute.
-
-With the help of this clean data, I created:
+**I visualised this clean data in the shape of:**
 1. Tables of my top ten artists as well as top ten songs with databars to show the number of hours streamed.
 2. A scatter plot of the variations in daily engagment representing the number of songs streamed daily.
 3. A line chart of the variability in artists and songs displaying the number of unique artists and songs streamed each month.
 4. An area chart representing my mothly listenership patterns. 
 5. A column chart of the origin of Spotify's inferences about me. 
+
+And how I transformed my Spotify streaming history into a symphony of data, notes, and insights. 
